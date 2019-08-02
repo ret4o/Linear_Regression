@@ -43,12 +43,12 @@ Above - each line is read and split into an array of 2 data points. In future I 
     def calc(x,y):
         xbar = sum(x)/(len(x))
         ybar = sum(y)/(len(y))
-xbar and ybar are the average values from the txt file.
+
 
         SSxx=0
         SSyy=0
         SPxy=0
-SSxx and SSyy are the some of squares for and y respectively. SPxy is the sum of products.
+SSxx and SSyy are the sum of squares for and y respectively. SPxy is the sum of products. xbar and ybar are the average values from the txt file.
 
         for ii in range(len(x)):
             SSxx+=(x[ii]-xbar)**2
@@ -63,7 +63,6 @@ SSxx and SSyy are the some of squares for and y respectively. SPxy is the sum of
 
         return(rline)
 
-#####################
 
     regressionline = calc(xlist,ylist)
     plt.plot(xlist,regressionline)
