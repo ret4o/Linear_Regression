@@ -70,4 +70,15 @@ SSxx and SSyy are the sum of squares for and y respectively. SPxy is the sum of 
     plt.ylabel('y')   
     plt.show()
     
+not sure how github works. But here is calc2 - making use of SciPy package
+
+    def calc2(x,y,input1):
     
+        n=len(x)-1 #defining the limit for x 
+        assert len(x)==len(y) #arrays must be equal length to fit linear rregression model
+        xp = np.linspace(x[0],x[n],1000) #constructing a more defined 
+        p1 = scipy.polyfit(x,y,input1)
+        plt.plot(xp,scipy.polyval(p1,xp))
+    
+    input1 = int(input('How many orders would you like to fit for \n?'))
+    calc2(x1,y1,input1)
