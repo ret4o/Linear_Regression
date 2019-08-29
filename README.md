@@ -69,3 +69,5 @@ SSxx and SSyy are the sum of squares for and y respectively. SPxy is the sum of 
     plt.xlabel('x')
     plt.ylabel('y')   
     plt.show()
+    
+    
